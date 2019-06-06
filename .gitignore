@@ -1,3 +1,4 @@
 *.png
+*.txt
 msgcache.json
 node_modules/
