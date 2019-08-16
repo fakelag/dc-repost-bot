@@ -34,7 +34,7 @@ export const process = (config, msg) => {
 			}
 			default:
 			{
-				message.reply(`Unrecognized command "${parts[0]}"`);
+				msg.reply(`Unrecognized command "${parts[0]}"`);
 				break;
 			}
 		}
