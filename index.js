@@ -52,6 +52,9 @@ const repostCheck = (channelId, messageData) => {
 	if (messageData.text.indexOf('http') === -1) // only interested in reposting links
 		return null;
 
+	if (messageData.text.indexOf('-new') !== -1)
+		return null;
+
 	const repostData = {
 		count: 0,
 		author: '',
